@@ -128,12 +128,12 @@ flowchart TB
     restOfWater = x - a)
     D -- Нет --> F{x + restOfWater >= b}
     E --> F
-    F -- Да --> G(countOfFilledBaths++
+    F -- Да --> G(countOfFilledBaths++,
     restOfWater = x + restOfWater - b)
     F -- Нет --> H(restOfWater = 0)
     G --> I{x + restOfWater >= c}
     H --> I
-    I -- Да --> J(countOfFilledBaths++ 
+    I -- Да --> J(countOfFilledBaths++,
     restOfWater = x + restOfWater - c)
     I -- Нет --> K(restOfWater = 0;)
     J --> L{x + restOfWater >= d}
